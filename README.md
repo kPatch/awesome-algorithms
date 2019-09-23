@@ -1,4 +1,4 @@
-<h3 align="center"> Irvin's Awesome Review / List of Algorithms Resources</h3>
+<h3 align="center"> Irvin's Awesome Review / List of Algorithm Resources</h3>
 <p align="center"> ༼ つ ◕_◕ ༽つ</p>
 
 ## Contents
@@ -23,3 +23,4 @@ The gist is that we want to fairly assess the overall time complexity of a data 
 **NOTE:**   
 1. Gives average performance of each operation in the worst case
 2. This method is less precise than other methods, as all operations are assigned *the same cost*
+3. Aggregate method is the weakest method, but most intuitive
