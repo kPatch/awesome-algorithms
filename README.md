@@ -5,6 +5,7 @@
 
 - [About](#about)
 - [Amortized Analysis](#amortized-analysis)
+- [Parallel Algorithms](#parallel-algorithms)
 
 ## About
 Just a list of resources and comments regarding algorithms and algorithm techniques.
@@ -40,3 +41,5 @@ The gist is that we want to fairly assess the overall time complexity of a data 
 #### References 
 - [MIT OCW - Amortization: Amortized Analysis](https://www.youtube.com/watch?v=3MpzavN3Mco)
 - [Brilliant: Amortized Analysis](https://brilliant.org/wiki/amortized-analysis/)
+
+## Parallel Algorithms
