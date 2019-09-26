@@ -43,3 +43,25 @@ The gist is that we want to fairly assess the overall time complexity of a data 
 - [Brilliant: Amortized Analysis](https://brilliant.org/wiki/amortized-analysis/)
 
 ## Parallel Algorithms
+In parallel algorithm we use the concepts like a shared-memory abstract machine called [PRAM: Parallel random-access machine](https://en.wikipedia.org/wiki/Parallel_random-access_machine).    
+
+### Performance Evaluation
+ - **Parallel running time** is measured in same manner as with sequential computers
+ - **Work** (usually called **Cost**) is the product  of the parallel running time and number of PEs
+ - **Work** often has another meaning, namely the sum of the actual running time for each PE
+ - **Work Efficient** (usually **Cost Optimal**): A parallel algorithm for which the work/cost is in the same complexity class as an optimal sequential algorithm
+ - For simplification, we treat ```work``` and ```cost``` equivalent
+ - Parllel runtime is when an entire single process will end    
+ - ```Work Cost = Parallel runtime * PR(processor elements)```
+
+**NOTE:**
+In distributed algorithms the structure is not there, where as parallel there is a standard type of network.   
+In distributed algorithms, there's a third dimension which is communication cost.
+
+### Memory Access Types
+In PRAM there two memory access types: (1) **Concurrent** or (2) **Exclusive**
+- EREW: Exclusive Read Exclusive Write - one of the most popular
+- CREW: Concurrent Read Exclusive Write - also very popular
+- ERCW: Exclusive Read Concurrent Write - not often used
+- CRCW: Concurrent Read Concurrent Write - most powerful, also very popular
+
