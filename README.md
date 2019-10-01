@@ -68,6 +68,7 @@ In PRAM there two memory access types: (1) **Concurrent** or (2) **Exclusive**
 ### Example: List Ranking
 
 #### References
+- [Chapter 30: Algorithms For Parallel Computers](http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap30.htm)
 - [List Ranking and List Scan](http://www.cs.cmu.edu/~scandal/alg/listrank.html)
 - [Parallel Algorithms](http://www.cs.cmu.edu/afs/cs/academic/class/15750-s11/www/handouts/par-notes.pdf)
 - [Parallel and Distributed Algorithms](https://cse.iitkgp.ac.in/~debdeep/courses_iitkgp/PAlgo/Autumn16-17/slides/Lect7Color.pdf)
