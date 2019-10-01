@@ -65,3 +65,9 @@ In PRAM there two memory access types: (1) **Concurrent** or (2) **Exclusive**
 - ERCW: Exclusive Read Concurrent Write - not often used
 - CRCW: Concurrent Read Concurrent Write - most powerful, also very popular
 
+### Example: List Ranking
+
+#### References
+- [List Ranking and List Scan](http://www.cs.cmu.edu/~scandal/alg/listrank.html)
+- [Parallel Algorithms](http://www.cs.cmu.edu/afs/cs/academic/class/15750-s11/www/handouts/par-notes.pdf)
+- [Parallel and Distributed Algorithms](https://cse.iitkgp.ac.in/~debdeep/courses_iitkgp/PAlgo/Autumn16-17/slides/Lect7Color.pdf)
