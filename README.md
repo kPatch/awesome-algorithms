@@ -79,3 +79,4 @@ In PRAM there two memory access types: (1) **Concurrent** or (2) **Exclusive**
 - [An Investigation of Graham’s Scan and Jarvis’ March](http://www.chrisharrison.net/index.php/Research/ConvexHull)
 - [Gift Wrap Algorithm (Jarvis March Algorithm)to find Convex Hull](https://iq.opengenus.org/gift-wrap-jarvis-march-algorithm-convex-hull/)
 - [A gentle introduction to the convex hull problem](https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c)
+- [Gift Wrapping Algorithm](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm)
