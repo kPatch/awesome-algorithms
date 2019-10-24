@@ -72,3 +72,10 @@ In PRAM there two memory access types: (1) **Concurrent** or (2) **Exclusive**
 - [List Ranking and List Scan](http://www.cs.cmu.edu/~scandal/alg/listrank.html)
 - [Parallel Algorithms](http://www.cs.cmu.edu/afs/cs/academic/class/15750-s11/www/handouts/par-notes.pdf)
 - [Parallel and Distributed Algorithms](https://cse.iitkgp.ac.in/~debdeep/courses_iitkgp/PAlgo/Autumn16-17/slides/Lect7Color.pdf)
+
+## Convex Hull
+
+### References
+- [An Investigation of Graham’s Scan and Jarvis’ March](http://www.chrisharrison.net/index.php/Research/ConvexHull)
+- [Gift Wrap Algorithm (Jarvis March Algorithm)to find Convex Hull](https://iq.opengenus.org/gift-wrap-jarvis-march-algorithm-convex-hull/)
+- [A gentle introduction to the convex hull problem](https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c)
