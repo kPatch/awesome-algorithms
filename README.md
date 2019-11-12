@@ -7,6 +7,7 @@
 - [Amortized Analysis](#amortized-analysis)
 - [Parallel Algorithms](#parallel-algorithms)
 - [Convex Hull](#convex-hull)
+- [NP-completeness](#np-completeness)
 
 ## About
 Just a list of resources and comments regarding algorithms and algorithm techniques.
@@ -81,3 +82,5 @@ In PRAM there two memory access types: (1) **Concurrent** or (2) **Exclusive**
 - [Gift Wrap Algorithm (Jarvis March Algorithm)to find Convex Hull](https://iq.opengenus.org/gift-wrap-jarvis-march-algorithm-convex-hull/)
 - [A gentle introduction to the convex hull problem](https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c)
 - [Gift Wrapping Algorithm](https://en.wikipedia.org/wiki/Gift_wrapping_algorithm)
+
+## NP-Completeness
