@@ -12,6 +12,13 @@ Also known as Heaps.
 - **Full Binary Tree**: Has mixum number of nodes
 - **Complete Binary Tree**: It's a full binary tree up to (*h -1*) and where all the nodes in *h* are as far left as possible
 
+### Implementation
+We can implement a binary tree in an array, where
+- index *i* is the index of the a given node
+- parent of *i* is in: *floor(i/2)*
+- left-child of *i* is in: *2 \* i*
+- right-child of *i* is in: *2 \* i + 1*
+
 ## Red Black Trees
 Red Black Trees are self-balancing Binary Search Trees (BST)
 
