@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Binary Trees](#binary-trees)
+- [Binary Search Trees](#binary-search-trees)
 - [Red Black Trees](#red-black-trees)
 
 ## Binary Trees
@@ -18,6 +19,12 @@ We can implement a binary tree in an array, where
 - parent of *i* is in: *floor(i/2)*
 - left-child of *i* is in: *2 \* i*
 - right-child of *i* is in: *2 \* i + 1*
+
+## Binary Search Trees
+### Property   
+Let *u*, *v*, *w* be three nodes such that *u* is in the left subtree of *v* and *w* is in the right subtree of *v*.   
+They must satisfy the following property:   
+- *key(u) <= key(v) <= key(w)*
 
 ## Red Black Trees
 Red Black Trees are self-balancing Binary Search Trees (BST)
