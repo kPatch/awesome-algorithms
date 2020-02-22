@@ -13,6 +13,17 @@ Also known as Heaps.
 - **Full Binary Tree**: Has mixum number of nodes
 - **Complete Binary Tree**: It's a full binary tree up to (*h -1*) and where all the nodes in *h* are as far left as possible
 
+### Formalism
+- Let *n* be the number of nodes in the tree
+- Let *h* be the height of the tree
+- Let *d* be the depth of a given node or tree
+
+### Overview
+- The maximum number of nodes at a given height *h_i* is (*2^h_1*)
+  - For example, the maximum number of nodes at height 2 is *2^2*, which is 4
+- The minimum height *(h_min)* of a tree is *floor(log_base2(n))*
+- The maximum height *(h_max)* of a tree is *n-1*
+
 ### Implementation
 We can implement a binary tree in an array, where
 - index *i* is the index of the a given node
