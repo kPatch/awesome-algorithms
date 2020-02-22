@@ -37,6 +37,13 @@ Let *u*, *v*, *w* be three nodes such that *u* is in the left subtree of *v* and
 They must satisfy the following property:   
 - *key(u) <= key(v) <= key(w)*
 
+### Binary Search
+- In worst case, takes *O(n)* when the tree is imbalanced / skewed
+- In best case, takes *O(log n)* when the tree is balanced (either a full or complete tree)
+
+### References
+- [GeeksforGeeks - BST, AVL Complexity](https://www.geeksforgeeks.org/complexity-different-operations-binary-tree-binary-search-tree-avl-tree/)
+
 ## Red Black Trees
 Red Black Trees are self-balancing Binary Search Trees (BST)
 
