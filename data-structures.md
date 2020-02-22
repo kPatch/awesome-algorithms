@@ -1,7 +1,16 @@
 # Data Structures
 
 ## Table of Contents
+- [Binary Trees](#binary-trees)
 - [Red Black Trees](#red-black-trees)
+
+## Binary Trees
+Also known as Heaps.
+
+### Definitions
+
+- **Full Binary Tree**: Has mixum number of nodes
+- **Complete Binary Tree**: It's a full binary tree up to (*h -1*) and where all the nodes in *h* are as far left as possible
 
 ## Red Black Trees
 Red Black Trees are self-balancing Binary Search Trees (BST)
