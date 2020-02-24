@@ -140,6 +140,13 @@ Thus, in the following example we have 8 lists.
 | 2nd Pass (2 lists)    | **(** 3, |    5,   |    7,   |   9 **)** | **(** 2, |    4,   |    6,   | 8 **)** |
 | 3rd Pass (1 list)     | **(** 2, |    3,   |    4,   |      5,   |    6,    |    7,   |    8,   |    9)   | 
 
-N| ote|  th| at | when u merge lists you have to use an additional array that will hold the result.
+At each pass we divide the list by two. First it's **8 lists**, divided by 2 we get **4 lists**, divided by 2 we get **2 lists**, divided by 2 we get **1 list**.   
+
+The number of passes is **logn**, where **n** represents the number of items in the list.   
+But, in each pass there are **n** number of merges. 
+So then the total running time is **nLog(n)**, that is ***O(nLogn)***.
+
+
+Note that when you merge a list you have to use an additional array that will hold the result.
 
 ## Merge Sort
