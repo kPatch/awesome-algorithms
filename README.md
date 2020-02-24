@@ -4,6 +4,7 @@
 ## Contents
 
 - [About](#about)
+- [Time Complexity](#time-complexity)
 - [Amortized Analysis](#amortized-analysis)
 - [Parallel Algorithms](#parallel-algorithms)
 - [Convex Hull](#convex-hull)
@@ -11,6 +12,8 @@
 
 ## About
 Just a list of resources and comments regarding algorithms and algorithm techniques.
+
+## Time Complexity
 
 ## Amortized Analysis
 
