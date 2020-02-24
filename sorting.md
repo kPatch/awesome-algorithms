@@ -1,6 +1,7 @@
 # Sorting Algorithms
 
 ## Table of Contents
+- [Merge Process](#merge-process)
 - [Merge Sort](#merge-sort)
 
 ## Merge Process
