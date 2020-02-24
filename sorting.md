@@ -160,3 +160,41 @@ So the total running time is Theta(nLogn).
 - [Runestone Academy](https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheMergeSort.html)
 
 ## QuickSort
+
+### Partition
+
+```cpp
+Partition( low, high ) {
+  pivot = A[low]
+  i = low
+  j = high
+  
+  while( i < j ) {
+    do {
+      i++
+    } while( A[i] <= pivot )
+    
+    do {
+      j--
+    } while( A[i] <= pivot )
+    
+    if( i < j ) {
+      swap( A[i], A[[j] )
+    }
+  }
+  swap( A[low], A[j] )
+  return j;;
+}
+```
+
+### QuickSort Algorithm
+
+```cpp
+QuickSort( low, high ) {
+  if( low < high ) {
+    j = Partition( low, high )
+    QuickSort( low, j )
+    QuickSort( j + 1, high )
+  }
+}
+```
