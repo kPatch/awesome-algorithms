@@ -150,3 +150,6 @@ So then the total running time is **nLog(n)**, that is ***O(nLogn)***.
 Note that when you merge a list you have to use an additional array that will hold the result.
 
 ## Merge Sort
+
+**n** elements are merged at each level (at each pass). There are **logn** recursive levels (passes) in total.   
+So the total running time is Theta(nLogn).   
