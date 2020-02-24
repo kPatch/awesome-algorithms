@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Merge Process](#merge-process)
+- [2-way Merge Sort](#2-way-merge-sort)
 - [Merge Sort](#merge-sort)
 
 ## Merge Process
@@ -123,5 +124,22 @@ Since the lists are individually sorted, we can just copy over the remaining val
 |              |                | 15           |
 |              |                | 17           |
 |              |                | 18           |
+
+## 2-way Merge Sort
+A single list is given, and we have to sort using the merge process.   
+We assume each element in the array is a list of a single element.   
+Thus, in the following example we have 8 lists.   
+| ***index***| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|------------|---|---|---|---|---|---|---|---|
+|***List A***| 9 | 3 | 7 | 5 | 6 | 4 | 8 | 2 |
+
+
+|***List A*** (8 lists) |     9    |    3    |    7    |     5     |     6    |    4    |    8    |    2    |
+|-----------------------|----------|---------|---------|-----------|----------|---------|---------|---------|
+| 1st Pass (4 lists)    | **(** 3, | 9 **)** | **(** 5,|   7 **)** | **(** 4, | 6 **)** | **(** 2,| 8 **)** |
+| 2nd Pass (2 lists)    | **(** 3, |    5,   |    7,   |   9 **)** | **(** 2, |    4,   |    6,   | 8 **)** |
+| 3rd Pass (1 list)     | **(** 2, |    3,   |    4,   |      5,   |    6,    |    7,   |    8,   |    9)   | 
+
+N| ote|  th| at | when u merge lists you have to use an additional array that will hold the result.
 
 ## Merge Sort
