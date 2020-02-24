@@ -4,6 +4,7 @@
 - [Merge Process](#merge-process)
 - [2-way Merge Sort](#2-way-merge-sort)
 - [Merge Sort](#merge-sort)
+- [QuickSort](#quicksort)
 
 ## Merge Process
 Two sorted list lets combine them.
@@ -153,3 +154,5 @@ Note that when you merge a list you have to use an additional array that will ho
 
 **n** elements are merged at each level (at each pass). There are **logn** recursive levels (passes) in total.   
 So the total running time is Theta(nLogn).   
+
+## QuickSort
