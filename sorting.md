@@ -138,7 +138,7 @@ Thus, in the following example we have 8 lists.
 |-----------------------|----------|---------|---------|-----------|----------|---------|---------|---------|
 | 1st Pass (4 lists)    | **(** 3, | 9 **)** | **(** 5,|   7 **)** | **(** 4, | 6 **)** | **(** 2,| 8 **)** |
 | 2nd Pass (2 lists)    | **(** 3, |    5,   |    7,   |   9 **)** | **(** 2, |    4,   |    6,   | 8 **)** |
-| 3rd Pass (1 list)     | **(** 2, |    3,   |    4,   |      5,   |    6,    |    7,   |    8,   |    9)   | 
+| 3rd Pass (1 list)     | **(** 2, |    3,   |    4,   |      5,   |    6,    |    7,   |    8,   | 9 **)** | 
 
 At each pass we divide the list by two. First it's **8 lists**, divided by 2 we get **4 lists**, divided by 2 we get **2 lists**, divided by 2 we get **1 list**.   
 
