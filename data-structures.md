@@ -4,6 +4,7 @@
 - [Binary Trees](#binary-trees)
 - [Binary Search Trees](#binary-search-trees)
 - [Red Black Trees](#red-black-trees)
+- [Sets](#sets)
 
 ## Binary Trees
 Also known as Heaps.
@@ -74,3 +75,11 @@ If the imbalance takes place in the right child's left subtree we do a **right, 
 If the imbalance takes place in the left child's right subtree we do a **left, right rotation**.   
 - Left rotation of the parent of the problematic node
 - Right rotation of the grandparent
+
+## Sets
+In mathematics, a set is a well-defined collection of distinct objects, considered as an object in its own right. For example, the numbers 2,4, and 6 are distinct objects when considered separately, but when they are considered collectively they form a single set of size three, written ***{2, 4, 6}***.
+
+### References
+- [TutorialEndge](https://tutorialedge.net/compsci/data-structures/sets-for-beginners/)
+- [Benoit Vallon](https://blog.benoitvallon.com/data-structures-in-javascript/the-set-data-structure/)
+- [Wiki - Sets (Abstract Data Type)](https://en.wikipedia.org/wiki/Set_(abstract_data_type))
