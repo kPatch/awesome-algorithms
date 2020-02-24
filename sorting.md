@@ -4,7 +4,7 @@
 - [Merge Process](#merge-process)
 - [2-way Merge Sort](#2-way-merge-sort)
 - [Merge Sort](#merge-sort)
-- [QuickSort](#quicksort)
+- [Quick Sort](#quick-sort)
 
 ## Merge Process
 Two sorted list lets combine them.
@@ -159,7 +159,7 @@ So the total running time is Theta(nLogn).
 - [HackerEarth](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/)
 - [Runestone Academy](https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheMergeSort.html)
 
-## QuickSort
+## Quick Sort
 
 ### Overview
 
@@ -202,7 +202,7 @@ Partition( low, high ) {
 }
 ```
 
-### QuickSort Algorithm
+### Quick Sort Algorithm
 
 ```cpp
 QuickSort( low, high ) {
