@@ -156,7 +156,7 @@ Note that when you merge a list you have to use an additional array that will ho
 So the total running time is Theta(nLogn).   
 
 ### Reference
--[HackerEarth](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/)
--[Runestone Academy](https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheMergeSort.html)
+- [HackerEarth](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/)
+- [Runestone Academy](https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheMergeSort.html)
 
 ## QuickSort
