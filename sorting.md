@@ -198,3 +198,7 @@ QuickSort( low, high ) {
   }
 }
 ```
+
+### References
+- [QuickSort Algorithm by Abdul Bari](https://www.youtube.com/watch?v=7h1s2SojIRw)
+- [QuickSort by RobEdwardsSDSU](https://www.youtube.com/watch?v=ZHVk2blR45Q)
