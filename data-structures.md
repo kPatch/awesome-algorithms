@@ -173,7 +173,14 @@ The new element has reached the root.
 
 Because in the worst case scenario the new element will have to percolate up to the root, the worst-case runningg time of the algorithm is ***O(log n)*** -  which is the height of a tree.
 
-#### Remove
+### Remove Min
+The minimum (or maximum in max heap) can be found at the root
+The removal algorithm consists of the following steps:
+1. Replace the root element with the last element (the element at the end of the array).
+2. Restore the heap property by ***percolating*** down.
+
+Similar to insertion, the worst-case runtime is ***O(log n)***.
+
 
 ### References
 - [CMU - Binary Heaps](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
