@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Stacks](#stacks)
+- [Queues](#queues)
 - [Binary Trees](#binary-trees)
 - [Heap](#heap)
 - [Binary Search Trees](#binary-search-trees)
@@ -19,6 +20,7 @@ When you think about stacks, you can think about stacking a set of plates. You b
 ### Applications
 - Overall, a stack can be used for backtracking. The process, where you need to access the most recent data elements in a series of elements. Think of a labyrinth or maze. You can explore and keep track of the places you've visited. Once you hit a dead end, you must backtrack to the previouce choice point.
 - Think of a browser history. You 'pop' the last item from the history stack by pressing the 'back' button.
+- **Depth-first search** with a Stack. This is in reference to backtracking. You go down a path until we get a dead end (a leaf in a tree), then we backtrack or back up (by popping a stack) to get to an alternative path (where there are other children in a tree to visit).
 
 ### Implementations
 **Array-based Stack**   
@@ -31,6 +33,11 @@ In a stack-based implementation, the stack may throw an *FullStackException* to 
 
 ### References
 - [CMU - Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
+
+## Queues
+
+### References
+-[CMU - Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 
 ## Binary Trees
 Also known as Heaps.
