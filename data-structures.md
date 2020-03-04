@@ -113,7 +113,7 @@ Consider the folowing binary heap representation
 |---|:-:|--:|---:|---:|---:|---:|---:|
 |   | 6 | 7 | 12 | 10 | 15 | 17 |    |
 
-#### Insert
+### Insert
 The insertion process is as follows:
 - Append the new element at the end of the heap (as the last element of the array)
 - Repair the heap property by (1) comparing the added element with its parent and (2) moving the added element up a level. That is, swapping positions with the parent when needed. This process is called **percolation up** or also known as **upheap**
@@ -171,7 +171,7 @@ The new element has reached the root.
 |---|:-:|--:|------:|---:|---:|---:|---:|
 |   | **5** | 7 | 5 | 10 | 15 | 17 | 12 |
 
-
+Because in the worst case scenario the new element will have to percolate up to the root, the worst-case runningg time of the algorithm is ***O(log n)*** -  which is the height of a tree.
 
 #### Remove
 
