@@ -37,7 +37,7 @@ In a stack-based implementation, the stack may throw an *FullStackException* to 
 ## Queues
 
 ### References
--[CMU - Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
+- [CMU - Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 
 ## Binary Trees
 Look at [Binary Heaps](#binary-heap).
@@ -181,10 +181,13 @@ The removal algorithm consists of the following steps:
 
 Similar to insertion, the worst-case runtime is ***O(log n)***.
 
+### Building Heap Bottom-up
+
+Time complexity is ***O(n)**. Look at the following [reference](https://stackoverflow.com/questions/9755721/how-can-building-a-heap-be-on-time-complexity).
 
 ### References
 - [CMU - Binary Heaps](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
-
+- [StackOverflow - How can building a heap be O(n) time complexity?](https://stackoverflow.com/questions/9755721/how-can-building-a-heap-be-on-time-complexity)
 ## Binary Search Trees
 
 ### Property   
