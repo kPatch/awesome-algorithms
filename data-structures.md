@@ -1,11 +1,36 @@
 # Data Structures
 
 ## Table of Contents
+- [Stacks](#stacks)
 - [Binary Trees](#binary-trees)
 - [Heap](#heap)
 - [Binary Search Trees](#binary-search-trees)
 - [Red Black Trees](#red-black-trees)
 - [Sets](#sets)
+
+## Stacks
+Stacks follow Last In First Out (LIFO) scheme. Meaning that new items are *pushed* (inserted) at the top of the stack, and *popping* (removing) the stack returns the last item that was *pushed*.   
+When you think about stacks, you can think about stacking a set of plates. You begin stacking one plate at a time. To begin washing the plates, you must start by removing a plate from the top of the stack.   
+
+### Operations
+- ***push()*** - inserts an element
+- ***pop()*** - removes and returns the last inserted element
+
+### Applications
+- Overall, a stack can be used for backtracking. The process, where you need to access the most recent data elements in a series of elements. Think of a labyrinth or maze. You can explore and keep track of the places you've visited. Once you hit a dead end, you must backtrack to the previouce choice point.
+- Think of a browser history. You 'pop' the last item from the history stack by pressing the 'back' button.
+
+### Implementations
+**Array-based Stack**   
+You can implement a Stack by using an array. An empty stack is an empty array, where a pointer *i* points to index 0. When an item is pushed into the stack, the pointer is incremented by 1 (*i + 1*). When an item is popped from the stack, the item at index *i* is returned and the index is decremented (*i - 1*).
+
+If the stack becomes empty (index isless than 0), we can throw an *EmptyStackException*.   
+In a stack-based implementation, the stack may throw an *FullStackException* to indicate that the underlying array has become full. **NOTE** that this is a limitation of an array-based implementation.   
+
+**NOTE** that we may implement a doubling strategy, where the size of the underlying array is doubled. When considering the long-term use of this strategy, the amortized cost of a push is *O(1)*.   
+
+### References
+- [CMU - Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 
 ## Binary Trees
 Also known as Heaps.
