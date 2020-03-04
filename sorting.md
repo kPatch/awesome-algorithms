@@ -1,6 +1,7 @@
 # Sorting Algorithms
 
 ## Table of Contents
+- [Bubble Sort](#bubble-sort)
 - [Selection Sort](#selection-sort)
 - [Merge Process](#merge-process)
 - [2-way Merge Sort](#2-way-merge-sort)
@@ -8,9 +9,20 @@
 - [Quick Sort](#quick-sort)
 - [Radix Sort](#radix-sort)
 
+## Bubble Sort
+
+### Pseudocode
+```
+Set swap counter to a non-zero value
+Repeat until the swap counter is 0:
+  Reset swap counter to 0
+  Look at each adjacent pair
+    If two adjacent elements are not in order, swap them and add one to the swap counter
+```
+
 ## Selection Sort
 
-### Pseudoscode
+### Pseudocode
 ```
 Repeat until no unsorted elements remain:
   Search the unsorted part of the data to find the smallest values
