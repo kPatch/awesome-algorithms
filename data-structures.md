@@ -65,6 +65,22 @@ We can implement a binary tree in an array, where
 - left-child of *i* is in: *2 \* i*
 - right-child of *i* is in: *2 \* i + 1*
 
+```
+Tree Representation
+
+                A   
+            /       \
+          C           B
+        /   \       /   \
+      D      G    F       K
+     / \    /
+    H   E  J
+```
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|:-:|--:|--:|--:|--:|--:|--:|--:|--:|---:|
+|   | A | C | B | D | G | F | K | H | E | J  |
+
 ## Binary Heap
 A binary heap is a **complete binary tree**  which satisfies the heap ordering property. There are two types of ordering properties:
 - the **min-heap property:** the value of each node is greater than or equal to the value of its parent, with the minimum-value element at the root
@@ -84,21 +100,12 @@ We can implement a binary tree in an array, where
 - left-child of *i* is in: *2 \* i*
 - right-child of *i* is in: *2 \* i + 1*
 
-```
-Tree Representation
 
-                A   
-            /       \
-          C           B
-        /   \       /   \
-      D      G    F       K
-     / \    /
-    H   E  J
-```
 
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|---|:-:|--:|--:|--:|--:|--:|--:|--:|--:|---:|
-|   | A | C | B | D | G | F | K | H | E | J  |
+#### Insert
+
+
+#### Remove
 
 ### References
 - [CMU - Binary Heaps](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
