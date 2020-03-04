@@ -4,7 +4,7 @@
 - [Stacks](#stacks)
 - [Queues](#queues)
 - [Binary Trees](#binary-trees)
-- [Heap](#heap)
+- [Binary Heap](#heap)
 - [Binary Search Trees](#binary-search-trees)
 - [Red Black Trees](#red-black-trees)
 - [Sets](#sets)
@@ -40,7 +40,7 @@ In a stack-based implementation, the stack may throw an *FullStackException* to 
 -[CMU - Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 
 ## Binary Trees
-Also known as Heaps.
+Look at [Binary Heaps](#binary-heap).
 
 ### Definitions
 
@@ -65,7 +65,7 @@ We can implement a binary tree in an array, where
 - left-child of *i* is in: *2 \* i*
 - right-child of *i* is in: *2 \* i + 1*
 
-## Heap
+## Binary Heap
 A binary heap is a **complete binary tree**  which satisfies the heap ordering property. There are two types of ordering properties:
 - the **min-heap property:** the value of each node is greater than or equal to the value of its parent, with the minimum-value element at the root
 - the **max-heap property:** the value of each node is less than or equal to the value of its parent, with the maximum-value element at the root.
@@ -76,7 +76,29 @@ One thing to note, again, is that a heap is a **complete binary tree**. Meaning 
 
 Since a heap is a complete binary tree, it has a smallest possible height - a heap with *N* nodes always has *O(log n)* height.
 
+### Implementation
 
+We can implement a binary tree in an array, where
+- index *i* is the index of the a given node
+- parent of *i* is in: *floor(i/2)*
+- left-child of *i* is in: *2 \* i*
+- right-child of *i* is in: *2 \* i + 1*
+
+```
+Tree Representation
+
+                A   
+            /       \
+          C           B
+        /   \       /   \
+      D      G    F       K
+     / \    /
+    H   E  J
+```
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|:-:|--:|--:|--:|--:|--:|--:|--:|--:|---:|
+|   | A | C | B | D | G | F | K | H | E | J  |
 
 ### References
 - [CMU - Binary Heaps](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
