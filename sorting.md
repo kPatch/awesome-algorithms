@@ -1,11 +1,21 @@
 # Sorting Algorithms
 
 ## Table of Contents
+- [Selection Sort](#selection-sort)
 - [Merge Process](#merge-process)
 - [2-way Merge Sort](#2-way-merge-sort)
 - [Merge Sort](#merge-sort)
 - [Quick Sort](#quick-sort)
 - [Radix Sort](#radix-sort)
+
+## Selection Sort
+
+### Pseudoscode
+```
+Repeat until no unsorted elements remain:
+  Search the unsorted part of the data to find the smallest values
+  Swap the smallest found value with the first element of the unsorted part
+```
 
 ## Merge Process
 Two sorted list lets combine them.
