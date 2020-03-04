@@ -4,7 +4,7 @@
 - [Stacks](#stacks)
 - [Queues](#queues)
 - [Binary Trees](#binary-trees)
-- [Binary Heap](#heap)
+- [Binary Heap](#binary-heap)
 - [Binary Search Trees](#binary-search-trees)
 - [Red Black Trees](#red-black-trees)
 - [Sets](#sets)
@@ -100,9 +100,77 @@ We can implement a binary tree in an array, where
 - left-child of *i* is in: *2 \* i*
 - right-child of *i* is in: *2 \* i + 1*
 
+```
+Consider the folowing binary heap representation
+                6   
+            /       \
+          7           12
+        /   \       /   \
+     10      15   17      
+```
 
+| 0 | 1 | 2 | 3  | 4  | 5  | 6  | 7  |
+|---|:-:|--:|---:|---:|---:|---:|---:|
+|   | 6 | 7 | 12 | 10 | 15 | 17 |    |
 
 #### Insert
+The insertion process is as follows:
+- Append the new element at the end of the heap (as the last element of the array)
+- Repair the heap property by (1) comparing the added element with its parent and (2) moving the added element up a level. That is, swapping positions with the parent when needed. This process is called **percolation up** or also known as **upheap**
+- The comparison is repeated until the new element reaches the root, or a node whose parent has a key smaller than or equal to the new element
+
+Consider the following example of adding the element ***5***
+
+
+```
+Insert 5 at the end of the heap.
+                6   
+            /       \
+          7           12
+        /   \       /   \
+     10      15   17     (5)
+```
+
+
+| 0 | 1 | 2 | 3  | 4  | 5  | 6  |   7   |
+|---|:-:|--:|---:|---:|---:|---:|------:|
+|   | 6 | 7 | 12 | 10 | 15 | 17 | **5** |
+
+```
+RESTORE HEAP PROPERTY
+Compare with parent (k/2). 5 < 12 is true.
+New element is less than parent, swap.
+                6   
+            /       \
+          7          (5)
+        /   \       /   \
+     10      15   17     12
+```
+
+
+| 0 | 1 | 2 |   3   | 4  | 5  | 6  | 7  |
+|---|:-:|--:|------:|---:|---:|---:|---:|
+|   | 6 | 7 | **5** | 10 | 15 | 17 | 12 |
+
+
+
+```
+RESTORE HEAP PROPERTY
+Compare with parent (k/2). 5 < 6 is true.
+New element is less than parent, swap.
+The new element has reached the root.
+               (5)   
+            /       \
+          7           6
+        /   \       /   \
+     10      15   17     12
+```
+
+
+| 0 |   1   | 2 | 3 | 4  | 5  | 6  | 7  |
+|---|:-:|--:|------:|---:|---:|---:|---:|
+|   | **5** | 7 | 5 | 10 | 15 | 17 | 12 |
+
 
 
 #### Remove
