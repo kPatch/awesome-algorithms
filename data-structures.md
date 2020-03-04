@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Binary Trees](#binary-trees)
+- [Heap](#heap)
 - [Binary Search Trees](#binary-search-trees)
 - [Red Black Trees](#red-black-trees)
 - [Sets](#sets)
@@ -32,7 +33,24 @@ We can implement a binary tree in an array, where
 - left-child of *i* is in: *2 \* i*
 - right-child of *i* is in: *2 \* i + 1*
 
+## Heap
+A binary heap is a **complete binary tree**  which satisfies the heap ordering property. There are two types of ordering properties:
+- the **min-heap property:** the value of each node is greater than or equal to the value of its parent, with the minimum-value element at the root
+- the **max-heap property:** the value of each node is less than or equal to the value of its parent, with the maximum-value element at the root.
+
+The latter is the reason why heaps are data structures often used to represent **priority queues** - a heap is a useful data structure when you need to remove the object with the highest (or lowest) priortiy.   
+
+One thing to note, again, is that a heap is a **complete binary tree**. Meaning that it's a full binary tree at least up to (*h -1*) -  that height *h-1* has all possible node. At heigh *h*, all the nodes are as far left as possible.   
+
+Since a heap is a complete binary tree, it has a smallest possible height - a heap with *N* nodes always has *O(log n)* height.
+
+
+
+### References
+- [CMU - Binary Heaps](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html)
+
 ## Binary Search Trees
+
 ### Property   
 Let *u*, *v*, *w* be three nodes such that *u* is in the left subtree of *v* and *w* is in the right subtree of *v*.   
 They must satisfy the following property:   
@@ -40,7 +58,7 @@ They must satisfy the following property:
 
 ### Binary Search
 - In worst case, takes *O(n)* when the tree is imbalanced / skewed
-- In best case, takes *O(log n)* when the tree is balanced (either a full or complete tree)
+- In best case, takes *O(log n)* when the tree is balanced (either a full or tree)
 
 ### References
 - [GeeksforGeeks - BST, AVL Complexity](https://www.geeksforgeeks.org/complexity-different-operations-binary-tree-binary-search-tree-avl-tree/)
