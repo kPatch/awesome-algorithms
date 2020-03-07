@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Bubble Sort](#bubble-sort)
 - [Selection Sort](#selection-sort)
+- [Insertion Sort](#insertion-sort)
 - [Merge Process](#merge-process)
 - [2-way Merge Sort](#2-way-merge-sort)
 - [Merge Sort](#merge-sort)
@@ -337,6 +338,8 @@ We do nothing, **44** is already in the sorted location.
 |index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 |-----|----|---:|----|----|----|----|----|----|
 |Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+## Insertion Sort
 
 ## Merge Process
 Two sorted list lets combine them.
