@@ -10,6 +10,12 @@
 - [Radix Sort](#radix-sort)
 
 ## Bubble Sort
+Instead of searching an array as a whole, bubble sort works by comparing adjacent pairs of objects in the array.   
+If the objects are not in the correct order, they are ***swapped*** so that the largest of the two moves up.   
+This process continues until the largest of the objects, eventually "bubbles" up to the highest position in the array.   
+After this occurs, the search for the next largest object begins.   
+The swapping continues until the whole array is in the correct order.   
+
 
 ### Pseudocode
 ```
@@ -19,6 +25,72 @@ Repeat until the swap counter is 0:
   Look at each adjacent pair
     If two adjacent elements are not in order, swap them and add one to the swap counter
 ```
+
+### Example
+
+We take an unsorted array.
+|index|  1 |  2 | 3  | 4  |  5 |
+|-----| ---|:--:| --:|----|----|
+|Arr  | 14 | 33 | 27 | 35 | 10 |
+
+Compare the very first two elements, check which one is greater.
+|index| :grey_question:| :grey_question:| 3  | 4  |  5 |
+|-----| ---------|:--------:| --:|----|----|
+|Arr  | **14** | **33** | 27 | 35 | 10 |
+
+In this case, value ***33*** is greater than ***14***, so both elements are in the right sorted location. 
+Next, we compare ***33*** with ***27***.
+|index|  1 | :grey_question:| :grey_question:| 4  |  5 |
+|-----|----|:--------:| --------:|----|----|
+|Arr  | 14 | **33** | **27** | 35 | 10 |
+
+We see that ***27*** is smaller than ***33***. We swap these two values.
+|index|  1 | :point_right: | :point_left:| 4  |  5 |
+|-----|----|:--------:| --------:|----|----|
+|Arr  | 14 | ***33*** | ***27*** | 35 | 10 |
+
+The new array looks as follows:
+|index|  1 | 2  | 3  | 4  |  5 |
+|-----|----|---:|----|----|----|
+|Arr  | 14 | 27 | 33 | 35 | 10 |
+
+Next we compare ***33*** and ***35***.   
+Both elements are already in sorted positions.   
+|index|  1 | 2  |:grey_question:|:grey_question:|  5 |
+|-----|----|---:|--------|--------|----|
+|Arr  | 14 | 27 | **33** | **35** | 10 |
+
+We move to the next two values, ***35*** and ***10***.
+|index|  1 | 2  | 3  |:grey_question:|:grey_question:|
+|-----|----|---:|----|--------|--------|
+|Arr  | 14 | 27 | 33 | **35** | **10** |
+
+We see that ***10*** is smaller than ***35***.   
+They are not in sorted order.   
+|index|  1 | 2  | 3  | :point_right: |:point_left:|
+|-----|----|---:|----|----------|----------|
+|Arr  | 14 | 27 | 33 | ***35*** | ***10*** |
+
+We swap these two elements.   
+We find that we have reached the end of the arrays - we have completed one iteration.   
+We have bubbled the largest element (**35**) to the end of the array.    
+The array should look as follows:
+
+
+|index|  1 | 2  | 3  | 4  | :heavy_check_mark: |
+|-----|----|---:|----|----|----|
+|Arr  | 14 | 27 | 33 | 10 | 35 |
+
+
+
+
+
+
+### Analysis
+The average and worst case complexity of Bubble Sort is ***O(n^2)*** where ***n*** is the number of items in the list.   
+
+### References
+- [Business Data Structures](http://www.pkirs.utep.edu/CIS3355/Tutorials/chapter9/tutorial9A/bubblesort.htm)
 
 ## Selection Sort
 
