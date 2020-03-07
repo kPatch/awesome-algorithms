@@ -169,12 +169,25 @@ The average and worst case complexity of Bubble Sort is ***O(n^2)*** where ***n*
 - [Business Data Structures](http://www.pkirs.utep.edu/CIS3355/Tutorials/chapter9/tutorial9A/bubblesort.htm)
 
 ## Selection Sort
+It's an **in-place** comparison-based algorithm, where the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the entire unsorted part is the entire list.   
+
+The smallest element is selected from the unsorted part of the array and it is swapped with the left most element in the unsorted part; that element becomes part of the sorted array. This process continues moving the unsorted array boundary by one element to the right.
+
 
 ### Pseudocode
 ```
 Repeat until no unsorted elements remain:
   Search the unsorted part of the data to find the smallest values
   Swap the smallest found value with the first element of the unsorted part
+```
+
+More explicit pseudocode:
+```
+Step 1 − Set MIN to location 0
+Step 2 − Search the minimum element in the list
+Step 3 − Swap with value at location MIN
+Step 4 − Increment MIN to point to next element
+Step 5 − Repeat until list is sorted
 ```
 
 ## Merge Process
