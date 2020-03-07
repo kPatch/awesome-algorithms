@@ -10,8 +10,8 @@
 - [Radix Sort](#radix-sort)
 
 ## Bubble Sort
-Instead of searching an array as a whole, bubble sort works by comparing adjacent pairs of objects in the array.   
-If the objects are not in the correct order, they are ***swapped*** so that the largest of the two moves up.   
+Instead of searching the entire array, bubble sort works by comparing **adjacent pairs** of objects in the array.   
+If the objects are not in the correct order, they are **swapped** so that the largest of the two moves up.   
 This process continues until the largest of the objects, eventually "bubbles" up to the highest position in the array.   
 After this occurs, the search for the next largest object begins.   
 The swapping continues until the whole array is in the correct order.   
