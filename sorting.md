@@ -33,12 +33,12 @@ We take an unsorted array.
 |-----| ---|:--:| --:|----|----|
 |Arr  | 14 | 33 | 27 | 35 | 10 |
 
-Compare the very first two elements, check which one is greater.
+Compare the very first two elements, check which one is greater.   
 |index| :grey_question:| :grey_question:| 3  | 4  |  5 |
 |-----| ---------|:--------:| --:|----|----|
 |Arr  | **14** | **33** | 27 | 35 | 10 |
 
-In this case, value ***33*** is greater than ***14***, so both elements are in the right sorted location. 
+In this case, value ***33*** is greater than ***14***, so both elements are in the right sorted location.   
 Next, we compare ***33*** with ***27***.
 |index|  1 | :grey_question:| :grey_question:| 4  |  5 |
 |-----|----|:--------:| --------:|----|----|
@@ -67,12 +67,12 @@ We move to the next two values, ***35*** and ***10***.
 
 We see that ***10*** is smaller than ***35***.   
 They are not in sorted order.   
-|index|  1 | 2  | 3  | :point_right: |:point_left:|
+|index|  1 | 2  | 3  | :point_right: | :point_left: |
 |-----|----|---:|----|----------|----------|
 |Arr  | 14 | 27 | 33 | ***35*** | ***10*** |
 
 We swap these two elements.   
-We find that we have reached the end of the arrays - we have completed one iteration.   
+We find that we have reached the end of the arrays - we have completed one iteration.    
 We have bubbled the largest element (**35**) to the end of the array.    
 The array should look as follows:
 
@@ -81,10 +81,85 @@ The array should look as follows:
 |-----|----|---:|----|----|----|
 |Arr  | 14 | 27 | 33 | 10 | 35 |
 
+**Iteration 1 Completed.**   
+
+We move on to the **second iteration**.   
 
 
+|index| :grey_question: | :grey_question: | 3  | 4  | :heavy_check_mark: |
+|-----|----|---:|----|----|----|
+|Arr  | **14** | **27** | 33 | 10 | 35 |
 
 
+|index| 1 | :grey_question: | :grey_question:  | 4 | :heavy_check_mark: |
+|-----|----|---:|----|----|----|
+|Arr  | 14 | **27** | **33** | 10 | 35 |
+
+
+|index| 1 | 2 | :grey_question:  | :grey_question: | :heavy_check_mark: |
+|-----|----|---:|----|----|----|
+|Arr  | 14 | 27 | **33** | **10** | 35 |
+
+
+|index| 1 | 2 | :point_right: | :point_left: | :heavy_check_mark: |
+|-----|----|---:|----|----|----|
+|Arr  | 14 | 27 | ***33*** | ***10*** | 35 |
+
+
+|index| 1 | 2 | 3 | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | 14 | 27 | 10 | 33 | 35 |
+
+After the **second iteration** the largest element in the unsorted part of the array (**33**) has been **bubbled** the end of the array.
+
+**Iteration 2 Completed.**   
+
+We move on to the **third iteration**.   
+
+|index| :grey_question:| :grey_question:| 3 | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | **14** | **27** | 10 | 33 | 35 |
+
+|index| 1 | :grey_question: | :grey_question:  | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | 14 | **27** | **10** | 33 | 35 |
+
+|index| 1 | :point_right: | :point_left: | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | 14 | **27** | **10** | 33 | 35 |
+
+|index| 1 | 2 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | 14 | 10 | 27 | 33 | 35 |
+
+After the **third iteration** the largest element in the unsorted part of the array (**27**) has been **bubbled** the end of the array.
+
+**Iteration 3 Completed.**   
+
+We move on to the **fourth iteration**.   
+
+|index| :grey_question: | :grey_question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | **14** | **10** | 27 | 33 | 35 |
+
+|index| :point_right: | :point_left: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | ***14*** | ***10*** | 27 | 33 | 35 |
+
+|index| 1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | 10 | 14 | 27 | 33 | 35 |
+
+After the **fourth iteration** the largest element in the unsorted part of the array (**14**) has been **bubbled** down.
+
+**Iteration 4 Completed.**   
+
+We move on to the **fifth iteration**.   
+No more swaps are required. Bubble sort learns that the array is completely sorted.
+
+|index| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
+|-----|----|---:|----|----|----|
+|Arr  | 10 | 14 | 27 | 33 | 35 |
 
 ### Analysis
 The average and worst case complexity of Bubble Sort is ***O(n^2)*** where ***n*** is the number of items in the list.   
