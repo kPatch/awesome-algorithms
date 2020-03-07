@@ -344,6 +344,10 @@ We do nothing, **44** is already in the sorted location.
 
 ## Insertion Sort
 
+### References
+
+- [TutorialsPoint - Insertion Sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
+
 ## Merge Process
 Two sorted list lets combine them.
 
