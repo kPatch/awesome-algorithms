@@ -339,6 +339,9 @@ We do nothing, **44** is already in the sorted location.
 |-----|----|---:|----|----|----|----|----|----|
 |Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
 
+### References
+- [TutorialsPoint - Selection Sort](https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm)
+
 ## Insertion Sort
 
 ## Merge Process
