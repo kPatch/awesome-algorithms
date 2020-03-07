@@ -190,6 +190,154 @@ Step 4 − Increment MIN to point to next element
 Step 5 − Repeat until list is sorted
 ```
 
+### Example
+
+Consider the following array:
+|index| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 14 | 33 | 27 | 10 | 35 | 19 | 42 | 44 |
+
+We begin at index 1 with value **14**, and scan the entire list for the smallest value.   
+Value **10** is the lowest value in the unsorted part of the array (the entire array for now).
+|index| :round_pushpin: | 2  | 3  |:+1:| 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 14 | 33 | 27 | 10 | 35 | 19 | 42 | 44 |
+
+These two values are swapped.
+|index| :point_right: | 2  | 3  | :point_left:  | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 14 | 33 | 27 | 10 | 35 | 19 | 42 | 44 |
+
+After one iteration 10, which happens to be the minimum value in the list, appears in the first position of the sorted list.   
+
+|index| :heavy_check_mark: | 2  | 3  | 4 | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 33 | 27 | 14 | 35 | 19 | 42 | 44 |
+
+We move our marker to the second position of the array. 
+This indicates the start of the unsorted part of the list.
+Then, we once again scan the list in a linear manner - searching for the smallest element.
+|index| :heavy_check_mark: | :round_pushpin:  | 3  | 4 | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 33 | 27 | 14 | 35 | 19 | 42 | 44 |
+
+Value **14** is found to be the smallest value in the unsorted part of the list.
+|index| :heavy_check_mark: | :round_pushpin:  | 3  | :+1: | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 33 | 27 | 14 | 35 | 19 | 42 | 44 |
+
+We swap it with the far left element in the unsorted part of the list.
+|index| :heavy_check_mark: | :point_right:  | 3  | :point_left: | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 33 | 27 | 14 | 35 | 19 | 42 | 44 |
+
+
+**14** is now part of the sorted part of the list.
+|index| :heavy_check_mark: | :heavy_check_mark:  | 3  | 4 | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 27 | 33 | 35 | 19 | 42 | 44 |
+
+**Third Iteration**
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :round_pushpin:  | 4 | 5  | 6  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 27 | 33 | 35 | 19 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :round_pushpin:  | 4 | 5  | :+1:  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 27 | 33 | 35 | 19 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :point_right:  | 4 | 5  | :point_left:  | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 27 | 33 | 35 | 19 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | 4 | 5  | 6 | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 33 | 35 | 27 | 42 | 44 |
+
+**Fourth Iteration**
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :round_pushpin: | 5  | 6 | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 33 | 35 | 27 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :round_pushpin: | 5  | :+1: | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 33 | 35 | 27 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :point_right: | 5  | :point_left: | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 33 | 35 | 27 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | 5  | 6 | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 35 | 33 | 42 | 44 |
+
+**Fifth Iteration**
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :round_pushpin: | 6 | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 35 | 33 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :round_pushpin: | :+1: | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 35 | 33 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :point_right: | :point_left: | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 35 | 33 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | 6 | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+**Sixth Iteration**
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :round_pushpin: | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :round_pushpin: :+1: | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+We do nothing, **35** is already in the sorted location
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 7  | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+**Seventh Iteration**
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :round_pushpin: | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :round_pushpin: :+1: | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+We do nothing, **42** is in the right sorted location.
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 8  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+**Eight Iteration**
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :round_pushpin:  |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+We are on the last element.
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :round_pushpin: :+1: |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
+We do nothing, **44** is already in the sorted location.
+|index| :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+|-----|----|---:|----|----|----|----|----|----|
+|Arr  | 10 | 14 | 19 | 27 | 33 | 35 | 42 | 44 |
+
 ## Merge Process
 Two sorted list lets combine them.
 
