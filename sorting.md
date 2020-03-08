@@ -604,6 +604,20 @@ Each bucket can hold a similar type of data.
 Afer distributing, each bucket is sorted using another sorting algorithm.   
 After that, all elements are gathered on the main list to get the sorted form.   
 
+### Pseudocode
+``` javascript
+bucketSort()
+  create N buckets each of which can hold a range of values
+  for all the buckets
+    initialize each bucket with 0 values
+  for all the buckets
+    put elements into buckets matching the range
+  for all the buckets 
+    sort elements in each bucket
+  gather elements from each bucket
+end bucketSort
+```
+
 ### Analysis
 
 **Worst Case Complexity:** ***O(n^2)***
