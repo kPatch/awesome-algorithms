@@ -602,6 +602,63 @@ QuickSort( low, high ) {
 }
 ```
 
+### Example
+
+|index| 0 | 1  | 2  | 3  | 4  | 5  | 6  | 7  |
+|-----|---|----|---:|----|----|----|----|----|
+|Arr  | 7 | 2  | 1  | 6  | 8  | 5  | 3  | 4  |
+
+Select Pivot
+
+|index| 0 | 1  | 2  | 3  | 4  | 5  | 6  | :arrow_down_small: |
+|-----|---|----|---:|----|----|----|----|----|
+|Arr  | 7 | 2  | 1  | 6  | 8  | 5  | 3  | 4  |
+
+
+|index| 0 | 1  | 2  | :arrow_down_small: | 4  | 5  | 6  | 7 |
+|-----|---|----|---:|----|----|----|----|----|
+|Arr  | 2 | 1  | 3  | 4  | 8  | 5  | 7  | 6  |
+
+
+|index| 0 | 1  | 2  |    | 4  | 5  | 6  | 7  |
+|-----|---|----|---:|----|----|----|----|----|
+|Arr  | 2 | 1  | 3  |    | 8  | 5  | 7  | 6  |
+
+
+Let's further explore the far left side of the partition.
+|index| 0 | 1  | :arrow_down_small: |    | 4  | 5  | 6  | 7 |
+|-----|---|----|---:|----|----|----|----|----|
+|Arr  | 2 | 1  | 3  |    | 8  | 5  | 7  | 6  |
+
+
+Since there's only values smaller than **3** then all the values go to the left.
+|index| 0 | 1  |   |   |   |   |   |   |
+|-----|---|----|---|---|---|---|---|---|
+|Arr  | 2 | 1  |   | X |   |   |   |   |
+
+|index| 0 | :arrow_down_small:  |   |   |   |   |   |   | 
+|-----|---|----|---|---|---|---|---|---|
+|Arr  | 2 | 1  |   |   |   |   |   |   |
+
+|index| 0 | 1  |   |   |   |   |   |   |
+|-----|---|----|---|---|---|---|---|---|
+|Arr  | 1 | 2  |   |   |   |   |   |   |
+
+|index|   | 1  |   |   |   |   |   |   |
+|-----|---|----|---|---|---|---|---|---|
+|Arr  |   | 2  |   |   |   |   |   |   |
+
+
+Indices 0 - 3 have been sorted.
+|index| 0 | 1 | 2 | 3 |   |   |   |   |
+|-----|---|---|---|---|---|---|---|---|
+|Arr  | 1 | 2 | 3 | 4 |   |   |   |   |
+
+Now we can work on the segement from index 4 - 7.
+
+
+
+
 ### References
 - [Quick Sort Algorithm by MyCodeSchool](https://www.youtube.com/watch?v=COk73cpQbFQ)
 - [Quick Sort Algorithm by Abdul Bari](https://www.youtube.com/watch?v=7h1s2SojIRw)
