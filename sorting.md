@@ -8,6 +8,7 @@
 - [2-way Merge Sort](#2-way-merge-sort)
 - [Merge Sort](#merge-sort)
 - [Quick Sort](#quick-sort)
+- [Bucket Sort](#bucket-sort)
 - [Radix Sort](#radix-sort)
 
 ## Bubble Sort
@@ -559,6 +560,31 @@ QuickSort( low, high ) {
 ### References
 - [QuickSort Algorithm by Abdul Bari](https://www.youtube.com/watch?v=7h1s2SojIRw)
 - [QuickSort by RobEdwardsSDSU](https://www.youtube.com/watch?v=ZHVk2blR45Q)
+
+## Bucket Sort
+Bucket sort is abount creating buckets and distributing data across these buckets.   
+Each bucket can hold a similar type of data.   
+Afer distributing, each bucket is sorted using another sorting algorithm.   
+After that, all elements are gathered on the main list to get the sorted form.   
+
+### Analysis
+
+**Worst Case Complexity:** ***O(n^2)***
+When there are elements of close range in the array, they are likely to be placed in the same bucket. This may result in some buckets having more number of elements than others.   
+
+It makes the complexity depend on the sorting algorithm used to sort the elements of the bucket.   
+
+The copmlexity becomes even worse when the elements are in reverse order. If insertion sort is used to sort elements of the bucket, then the time complexity becomes **O(n^2)**.   
+
+**Best Case Complexity:** ***O(n + k)***
+It occurs when the elements are uniformly distributed in the buckets with a nearly equal number of elements in each bucket.   
+
+The complexity becomes even better if the elements inside the buckets are already sorted.   
+
+If insertion sort is used to sort elements of a bucket then the overall complexity in the best case will be linear ie. O(n+k). **O(n)** is the complexity for making the buckets and **O(k)** is the complexity for sorting the elements of the bucket using algorithm having linear time complexity at best case.   
+
+**Average Case Complexity:** ***O(n)***
+It occurs when the elements are distributed randomly in the array. Even if the elements are not distributed uniformly, bucket sort runs in linear time. It holds true until the sum of the squares of the bucket sizes is linear in the total number of elements.   
 
 ## Radix Sort
 
