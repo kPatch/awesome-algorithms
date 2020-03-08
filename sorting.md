@@ -603,8 +603,9 @@ QuickSort( low, high ) {
 ```
 
 ### References
-- [QuickSort Algorithm by Abdul Bari](https://www.youtube.com/watch?v=7h1s2SojIRw)
-- [QuickSort by RobEdwardsSDSU](https://www.youtube.com/watch?v=ZHVk2blR45Q)
+- [Quick Sort Algorithm by MyCodeSchool](https://www.youtube.com/watch?v=COk73cpQbFQ)
+- [Quick Sort Algorithm by Abdul Bari](https://www.youtube.com/watch?v=7h1s2SojIRw)
+- [Quick Sort by RobEdwardsSDSU](https://www.youtube.com/watch?v=ZHVk2blR45Q)
 
 ## Bucket Sort
 Bucket sort is abount creating buckets and distributing data across these buckets.   
