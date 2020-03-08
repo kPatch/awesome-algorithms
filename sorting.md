@@ -586,5 +586,9 @@ If insertion sort is used to sort elements of a bucket then the overall complexi
 **Average Case Complexity:** ***O(n)***
 It occurs when the elements are distributed randomly in the array. Even if the elements are not distributed uniformly, bucket sort runs in linear time. It holds true until the sum of the squares of the bucket sizes is linear in the total number of elements.   
 
+### References
+- [Programiz - Bucket Sort](https://www.programiz.com/dsa/bucket-sort)
+- [CMU Adamchik - Sorting](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)
+
 ## Radix Sort
 
