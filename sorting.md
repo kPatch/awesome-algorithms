@@ -661,6 +661,7 @@ Now we can work on the segement from index 4 - 7.
 
 ### References
 - [Quick Sort Algorithm by MyCodeSchool](https://www.youtube.com/watch?v=COk73cpQbFQ)
+- [Quick Sort Algorithm Analysis by MyCodeSchool](https://www.youtube.com/watch?v=3Bbm3Prd5Fo)
 - [Quick Sort Algorithm by Abdul Bari](https://www.youtube.com/watch?v=7h1s2SojIRw)
 - [Quick Sort by RobEdwardsSDSU](https://www.youtube.com/watch?v=ZHVk2blR45Q)
 
