@@ -384,7 +384,7 @@ We do nothing, **44** is already in the sorted location.
 ### References
 
 - [TutorialsPoint - Insertion Sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
-- [CMU Adamchi - Sorting](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)
+- [CMU Adamchik - Sorting](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)
 
 ## Merge Process
 Two sorted list lets combine them.
