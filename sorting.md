@@ -211,6 +211,22 @@ Step 3 − Swap with value at location MIN
 Step 4 − Increment MIN to point to next element
 Step 5 − Repeat until list is sorted
 ```
+### Example Code
+
+```cpp
+void selectionSort(int[] ar) 
+{
+  for (int i = 0; i ‹ ar.length-1; i++)
+  {
+    int min = i;
+    for (int j = i+1; j ‹ ar.length; j++)
+      if (ar[j] ‹ ar[min]) min = j;
+    int temp = ar[i];
+    ar[i] = ar[min];
+    ar[min] = temp;
+  }
+}
+```
 
 ### Example
 
@@ -368,6 +384,7 @@ We do nothing, **44** is already in the sorted location.
 ### References
 
 - [TutorialsPoint - Insertion Sort](https://www.tutorialspoint.com/data_structures_algorithms/insertion_sort_algorithm.htm)
+- [CMU Adamchi - Sorting](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)
 
 ## Merge Process
 Two sorted list lets combine them.
