@@ -28,6 +28,23 @@ Repeat until the swap counter is 0:
     If two adjacent elements are not in order, swap them and add one to the swap counter
 ```
 
+### Example Code
+
+```cpp
+void bubbleSort(int ar[])
+{
+   for (int i = (ar.length - 1); i >= 0; i--)
+   {
+      for (int j = 1; j ≤ i; j++)
+      {
+         if (ar[j-1] > ar[j])
+         {
+              int temp = ar[j-1];
+              ar[j-1] = ar[j];
+              ar[j] = temp;
+   } } } }
+```
+
 ### Example
 
 We take an unsorted array.
