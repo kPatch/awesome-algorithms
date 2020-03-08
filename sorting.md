@@ -546,15 +546,23 @@ So the total running time is Theta(nLogn).
 We take a random number on the list, called a **pivot**, so that all the smaller things are on the left and all the larger things are on the right.   
 
 So, how do we choose the pivot point?   
-- Choose a number in the middle of the list
+- Various ways to choose the pivot point
+- The last element is the most common way
 
-### Running Time
+
+
+### Analysis
 The worst case for QuickSort occurs when the pivot is the unique minimum or maximum element.   
 In this case either the left or right subarray will have a size of ***n - 1*** and the other has 0.   
 The running time is proportional to the sum ***n + (n - 1) + ... + 2 + 1***.   
 Thus, the worst case running time of QuickSort is ***O(n^2)***.
 
+**Average case:** O(nlogn)
 
+**Worst case:** O(n^2)
+
+But, **note** that unlike Merge Sort, Quick Sort is **in-place**. It does not require additional space.   
+This is unlike Merge Sort which has an **O(n)** space complexity.   
 
 ### Partition
 
