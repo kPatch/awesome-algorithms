@@ -710,3 +710,5 @@ It occurs when the elements are distributed randomly in the array. Even if the e
 
 ## Radix Sort
 
+### References
+- [Radix Sort - MUST READ](https://medium.com/basecs/getting-to-the-root-of-sorting-with-radix-sort-f8e9240d4224)
